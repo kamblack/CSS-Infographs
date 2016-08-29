@@ -1,363 +1,338 @@
-.pie * {
-    z-index: 3;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    text-shadow: 2px 2px 5px black;
-    margin: 0;
-    text-align: center;
-}
-
 .pie {
 	height: 150px;
 	width: 150px;
-	display: flex;
-	background: #00b;
-	border-radius: 75px;
-	position: relative;
-	transition: all 0.5s linear;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie::before, .pie::after {
-	content: '';
-	position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    margin: auto;
-	border-radius: 75px;
-	width: 100%;
-	height: 100%;
-	display: block;
-	transition: all 0.5s linear;
+	display: inline-block;
+    background: #ddd;
+    background-image: linear-gradient(to right, transparent 50%, #678668 0);
+	border-radius: 50%;
+    margin-right: 15px;
 }
 
 .pie::before {
-	background: linear-gradient(to left, transparent 50%, #bbb 0);
-	z-index: 1;
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 0 100% 100% 0 / 50%;
+    margin-left: 50%;
+    transform-origin: left;
+    animation: pie-spin 50s linear infinite, pie-bg 100s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
 }
 
-.pie-0::after,.pie-1::after,.pie-2::after,.pie-3::after,.pie-4::after,.pie-5::after,
-.pie-6::after,.pie-7::after,.pie-8::after,.pie-9::after,.pie-10::after,
-.pie-11::after,.pie-12::after,.pie-13::after,.pie-14::after,.pie-15::after,
-.pie-16::after,.pie-17::after,.pie-18::after,.pie-19::after,.pie-20::after,
-.pie-21::after,.pie-22::after,.pie-23::after,.pie-24::after,.pie-25::after,
-.pie-26::after,.pie-27::after,.pie-28::after,.pie-29::after,.pie-30::after,
-.pie-31::after,.pie-32::after,.pie-33::after,.pie-34::after,.pie-35::after,
-.pie-36::after,.pie-37::after,.pie-38::after,.pie-39::after,.pie-40::after,
-.pie-41::after,.pie-42::after,.pie-43::after,.pie-44::after,.pie-45::after,
-.pie-46::after,.pie-47::after,.pie-48::after,.pie-49::after,.pie-50::after {
-    background: linear-gradient(to left, transparent 50%, #bbb 0) !important;
-    z-index: 2;
+@keyframes pie-spin {
+    to {
+        transform: rotate(.5turn);
+    }
 }
 
-.pie::after {
-	background: linear-gradient(to right, transparent 50%, #00b 0);
-    z-index: 2;
+@keyframes pie-bg {
+    50% {
+        background: #678668;
+    }
 }
 
-
-
-.pie-0::before {
-	transform: rotate(-180deg);
+.pie-0 {
+    animation-delay: -0s;
 }
-.pie-1::before {
-	transform: rotate(-176.4deg);
+.pie-1 {
+    animation-delay: -1s;
 }
-.pie-2::before {
-	transform: rotate(-172.8deg);
+.pie-2 {
+    animation-delay: -2s;
 }
-.pie-3::before {
-	transform: rotate(-169.2deg);
+.pie-3 {
+    animation-delay: -3s;
 }
-.pie-4::before {
-	transform: rotate(-165.6deg);
+.pie-4 {
+    animation-delay: -4s;
 }
-.pie-5::before {
-	transform: rotate(-162deg);
+.pie-5 {
+    animation-delay: -5s;
 }
-.pie-6::before {
-	transform: rotate(-158.4deg);
+.pie-6 {
+    animation-delay: -6s;
 }
-.pie-7::before {
-	transform: rotate(-154.8deg);
+.pie-7 {
+    animation-delay: -7s;
 }
-.pie-8::before {
-	transform: rotate(-151.2deg);
+.pie-8 {
+    animation-delay: -8s;
 }
-.pie-9::before {
-	transform: rotate(-147.6deg);
+.pie-9 {
+    animation-delay: -9s;
 }
-.pie-10::before {
-	transform: rotate(-144deg);
+.pie-10 {
+    animation-delay: -10s;
 }
-.pie-11::before {
-	transform: rotate(-140.4deg);
+.pie-11 {
+    animation-delay: -11s;
 }
-.pie-12::before {
-	transform: rotate(-136.8deg);
+.pie-12 {
+    animation-delay: -12s;
 }
-.pie-13::before {
-	transform: rotate(-133.2deg);
+.pie-13 {
+    animation-delay: -13s;
 }
-.pie-14::before {
-	transform: rotate(-129.6deg);
+.pie-14 {
+    animation-delay: -14s;
 }
-.pie-15::before {
-	transform: rotate(-126deg);
+.pie-15 {
+    animation-delay: -15s;
 }
-.pie-16::before {
-	transform: rotate(-122.4deg);
+.pie-16 {
+    animation-delay: -16s;
 }
-.pie-17::before {
-	transform: rotate(-118.8deg);
+.pie-17 {
+    animation-delay: -17s;
 }
-.pie-18::before {
-	transform: rotate(-115.2deg);
+.pie-18 {
+    animation-delay: -18s;
 }
-.pie-19::before {
-	transform: rotate(-111.6deg);
+.pie-19 {
+    animation-delay: -19s;
 }
-.pie-20::before {
-	transform: rotate(-108deg);
+.pie-20 {
+    animation-delay: -20s;
 }
-.pie-21::before {
-	transform: rotate(-104.4deg);
+.pie-21 {
+    animation-delay: -21s;
 }
-.pie-22::before {
-	transform: rotate(-100.8deg);
+.pie-22 {
+    animation-delay: -22s;
 }
-.pie-23::before {
-	transform: rotate(-97.2deg);
+.pie-23 {
+    animation-delay: -23s;
 }
-.pie-24::before {
-	transform: rotate(-93.6deg);
+.pie-24 {
+    animation-delay: -24s;
 }
-.pie-25::before {
-	transform: rotate(-90deg);
+.pie-25 {
+    animation-delay: -25s;
 }
-.pie-26::before {
-	transform: rotate(-86.4deg);
+.pie-26 {
+    animation-delay: -26s;
 }
-.pie-27::before {
-	transform: rotate(-82.8deg);
+.pie-27 {
+    animation-delay: -27s;
 }
-.pie-28::before {
-	transform: rotate(-79.2deg);
+.pie-28 {
+    animation-delay: -28s;
 }
-.pie-29::before {
-	transform: rotate(-75.6deg);
+.pie-29 {
+    animation-delay: -29s;
 }
-.pie-30::before {
-	transform: rotate(-72deg);
+.pie-30 {
+    animation-delay: -30s;
 }
-.pie-31::before {
-	transform: rotate(-68.4deg);
+.pie-31 {
+    animation-delay: -31s;
 }
-.pie-32::before {
-	transform: rotate(-64.8deg);
+.pie-32 {
+    animation-delay: -32s;
 }
-.pie-33::before {
-	transform: rotate(-61.2deg);
+.pie-33 {
+    animation-delay: -33s;
 }
-.pie-34::before {
-	transform: rotate(-57.6deg);
+.pie-34 {
+    animation-delay: -34s;
 }
-.pie-35::before {
-	transform: rotate(-54deg);
+.pie-35 {
+    animation-delay: -35s;
 }
-.pie-36::before {
-	transform: rotate(-50.4deg);
+.pie-36 {
+    animation-delay: -36s;
 }
-.pie-37::before {
-	transform: rotate(-46.8deg);
+.pie-37 {
+    animation-delay: -37s;
 }
-.pie-38::before {
-	transform: rotate(-43.2deg);
+.pie-38 {
+    animation-delay: -38s;
 }
-.pie-39::before {
-	transform: rotate(-39.6deg);
+.pie-39 {
+    animation-delay: -39s;
 }
-.pie-40::before {
-	transform: rotate(-36deg);
+.pie-40 {
+    animation-delay: -40s;
 }
-.pie-41::before {
-	transform: rotate(-32.4deg);
+.pie-41 {
+    animation-delay: -41s;
 }
-.pie-42::before {
-	transform: rotate(-28.8deg);
+.pie-42 {
+    animation-delay: -42s;
 }
-.pie-43::before {
-	transform: rotate(-25.2deg);
+.pie-43 {
+    animation-delay: -43s;
 }
-.pie-44::before {
-	transform: rotate(-21.6deg);
+.pie-44 {
+    animation-delay: -44s;
 }
-.pie-45::before {
-	transform: rotate(-18deg);
+.pie-45 {
+    animation-delay: -45s;
 }
-.pie-46::before {
-	transform: rotate(-14.4deg);
+.pie-46 {
+    animation-delay: -46s;
 }
-.pie-47::before {
-	transform: rotate(-10.8deg);
+.pie-47 {
+    animation-delay: -47s;
 }
-.pie-48::before {
-	transform: rotate(-7.2deg);
+.pie-48 {
+    animation-delay: -48s;
 }
-.pie-49::before {
-	transform: rotate(-3.6deg);
+.pie-49 {
+    animation-delay: -49s;
 }
-.pie-50::before, .pie-50::after {
-	transform: rotate(0deg);
+.pie-50 {
+    animation-delay: -50s;
 }
-.pie-51::after {
-    transform: rotate(3.6deg);
+.pie-51 {
+    animation-delay: -51s;
 }
-.pie-52::after {
-    transform: rotate(7.2deg);
+.pie-52 {
+    animation-delay: -52s;
 }
-.pie-53::after {
-    transform: rotate(10.8deg);
+.pie-53 {
+    animation-delay: -53s;
 }
-.pie-54::after {
-    transform: rotate(14.4deg);
+.pie-54 {
+    animation-delay: -54s;
 }
-.pie-55::after {
-    transform: rotate(18deg);
+.pie-55 {
+    animation-delay: -55s;
 }
-.pie-56::after {
-    transform: rotate(21.6deg);
+.pie-56 {
+    animation-delay: -56s;
 }
-.pie-57::after {
-    transform: rotate(25.2deg);
+.pie-57 {
+    animation-delay: -57s;
 }
-.pie-58::after {
-    transform: rotate(28.8deg);
+.pie-58 {
+    animation-delay: -58s;
 }
-.pie-59::after {
-    transform: rotate(32.4deg);
+.pie-59 {
+    animation-delay: -59s;
 }
-.pie-60::after {
-    transform: rotate(36deg);
+.pie-60 {
+    animation-delay: -60s;
 }
-.pie-61::after {
-    transform: rotate(39.6deg);
+.pie-61 {
+    animation-delay: -61s;
 }
-.pie-62::after {
-    transform: rotate(43.2deg);
+.pie-62 {
+    animation-delay: -62s;
 }
-.pie-63::after {
-    transform: rotate(46.8deg);
+.pie-63 {
+    animation-delay: -63s;
 }
-.pie-64::after {
-    transform: rotate(50.4deg);
+.pie-64 {
+    animation-delay: -64s;
 }
-.pie-65::after {
-    transform: rotate(54deg);
+.pie-65 {
+    animation-delay: -65s;
 }
-.pie-66::after {
-    transform: rotate(57.6deg);
+.pie-66 {
+    animation-delay: -66s;
 }
-.pie-67::after {
-    transform: rotate(61.2deg);
+.pie-67 {
+    animation-delay: -67s;
 }
-.pie-68::after {
-    transform: rotate(64.8deg);
+.pie-68 {
+    animation-delay: -68s;
 }
-.pie-69::after {
-    transform: rotate(68.4deg);
+.pie-69 {
+    animation-delay: -69s;
 }
-.pie-70::after {
-    transform: rotate(72deg);
+.pie-70 {
+    animation-delay: -70s;
 }
-.pie-71::after {
-    transform: rotate(75.6deg);
+.pie-71 {
+    animation-delay: -71s;
 }
-.pie-72::after {
-    transform: rotate(79.2deg);
+.pie-72 {
+    animation-delay: -72s;
 }
-.pie-73::after {
-    transform: rotate(82.8deg);
+.pie-73 {
+    animation-delay: -73s;
 }
-.pie-74::after {
-    transform: rotate(86.4deg);
+.pie-74 {
+    animation-delay: -74s;
 }
-.pie-75::after {
-    transform: rotate(90deg);
+.pie-75 {
+    animation-delay: -75s;
 }
-.pie-76::after {
-    transform: rotate(93.6deg);
+.pie-76 {
+    animation-delay: -76s;
 }
-.pie-77::after {
-    transform: rotate(97.2deg);
+.pie-77 {
+    animation-delay: -77s;
 }
-.pie-78::after {
-    transform: rotate(100.8deg);
+.pie-78 {
+    animation-delay: -78s;
 }
-.pie-79::after {
-    transform: rotate(104.4deg);
+.pie-79 {
+    animation-delay: -79s;
 }
-.pie-80::after {
-    transform: rotate(108deg);
+.pie-80 {
+    animation-delay: -80s;
 }
-.pie-81::after {
-    transform: rotate(111.6deg);
+.pie-81 {
+    animation-delay: -81s;
 }
-.pie-82::after {
-    transform: rotate(115.2deg);
+.pie-82 {
+    animation-delay: -82s;
 }
-.pie-83::after {
-    transform: rotate(118.8deg);
+.pie-83 {
+    animation-delay: -83s;
 }
-.pie-84::after {
-    transform: rotate(122.4deg);
+.pie-84 {
+    animation-delay: -84s;
 }
-.pie-85::after {
-    transform: rotate(126deg);
+.pie-85 {
+    animation-delay: -85s;
 }
-.pie-86::after {
-    transform: rotate(129.6deg);
+.pie-86 {
+    animation-delay: -86s;
 }
-.pie-87::after {
-    transform: rotate(133.2deg);
+.pie-87 {
+    animation-delay: -87s;
 }
-.pie-88::after {
-    transform: rotate(136.8deg);
+.pie-88 {
+    animation-delay: -88s;
 }
-.pie-89::after {
-    transform: rotate(140.4deg);
+.pie-89 {
+    animation-delay: -89s;
 }
-.pie-90::after {
-    transform: rotate(144deg);
+.pie-90 {
+    animation-delay: -90s;
 }
-.pie-91::after {
-    transform: rotate(147.6deg);
+.pie-91 {
+    animation-delay: -91s;
 }
-.pie-92::after {
-    transform: rotate(151.2deg);
+.pie-92 {
+    animation-delay: -92s;
 }
-.pie-93::after {
-    transform: rotate(154.8deg);
+.pie-93 {
+    animation-delay: -93s;
 }
-.pie-94::after {
-    transform: rotate(158.4deg);
+.pie-94 {
+    animation-delay: -94s;
 }
-.pie-95::after {
-    transform: rotate(162deg);
+.pie-95 {
+    animation-delay: -95s;
 }
-.pie-96::after {
-    transform: rotate(165.6deg);
+.pie-96 {
+    animation-delay: -96s;
 }
-.pie-97::after {
-    transform: rotate(169.2deg);
+.pie-97 {
+    animation-delay: -97s;
 }
-.pie-98::after {
-    transform: rotate(172.8deg);
+.pie-98 {
+    animation-delay: -98s;
 }
-.pie-99::after {
-    transform: rotate(176.4deg);
+.pie-99 {
+    animation-delay: -99s;
 }
-.pie-100::after {
-    transform: rotate(180deg);
+.pie-100 {
+    animation-delay: -99.9s;
 }
