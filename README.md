@@ -1,2 +1,2 @@
 # CSS-Infographs
-Framework for creating infographic elements with simple HTML
+CSS framework for creating infographic elements with simple HTML
