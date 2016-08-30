@@ -1,0 +1,342 @@
+.linegraph {
+    background-color: #ddd;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-image: linear-gradient(to bottom,
+        transparent 9.5%, #333 10%, transparent 10.5%,
+        transparent 19.5%, #333 20%, transparent 20.5%,
+        transparent 29.5%, #333 30%, transparent 30.5%,
+        transparent 39.5%, #333 40%, transparent 40.5%,
+        transparent 49.5%, #333 50%, transparent 50.5%,
+        transparent 59.5%, #333 60%, transparent 60.5%,
+        transparent 69.5%, #333 70%, transparent 70.5%,
+        transparent 79.5%, #333 80%, transparent 80.5%,
+        transparent 89.5%, #333 90%, transparent 90.5%);
+}
+
+.point {
+    display: inline-block;
+    background-color: #cc7535;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: pointheight 100s linear infinite;
+    animation-delay: -0s;
+    animation-play-state: paused;
+}
+
+@keyframes pointheight {
+    from {
+        margin-top: 98%;
+    }
+    to {
+        margin-top: -2%;
+    }
+}
+
+[data-percent^='0'] {
+    animation-delay: -0s;
+}
+[data-percent^='1'] {
+    animation-delay: -1s;
+}
+[data-percent^='2'] {
+    animation-delay: -2s;
+}
+[data-percent^='3'] {
+    animation-delay: -3s;
+}
+[data-percent^='4'] {
+    animation-delay: -4s;
+}
+[data-percent^='5'] {
+    animation-delay: -5s;
+}
+[data-percent^='6'] {
+    animation-delay: -6s;
+}
+[data-percent^='7'] {
+    animation-delay: -7s;
+}
+[data-percent^='8'] {
+    animation-delay: -8s;
+}
+[data-percent^='9'] {
+    animation-delay: -9s;
+}
+[data-percent^='10'] {
+    animation-delay: -10s;
+}
+[data-percent^='11'] {
+    animation-delay: -11s;
+}
+[data-percent^='12'] {
+    animation-delay: -12s;
+}
+[data-percent^='13'] {
+    animation-delay: -13s;
+}
+[data-percent^='14'] {
+    animation-delay: -14s;
+}
+[data-percent^='15'] {
+    animation-delay: -15s;
+}
+[data-percent^='16'] {
+    animation-delay: -16s;
+}
+[data-percent^='17'] {
+    animation-delay: -17s;
+}
+[data-percent^='18'] {
+    animation-delay: -18s;
+}
+[data-percent^='19'] {
+    animation-delay: -19s;
+}
+[data-percent^='20'] {
+    animation-delay: -20s;
+}
+[data-percent^='21'] {
+    animation-delay: -21s;
+}
+[data-percent^='22'] {
+    animation-delay: -22s;
+}
+[data-percent^='23'] {
+    animation-delay: -23s;
+}
+[data-percent^='24'] {
+    animation-delay: -24s;
+}
+[data-percent^='25'] {
+    animation-delay: -25s;
+}
+[data-percent^='26'] {
+    animation-delay: -26s;
+}
+[data-percent^='27'] {
+    animation-delay: -27s;
+}
+[data-percent^='28'] {
+    animation-delay: -28s;
+}
+[data-percent^='29'] {
+    animation-delay: -29s;
+}
+[data-percent^='30'] {
+    animation-delay: -30s;
+}
+[data-percent^='31'] {
+    animation-delay: -31s;
+}
+[data-percent^='32'] {
+    animation-delay: -32s;
+}
+[data-percent^='33'] {
+    animation-delay: -33s;
+}
+[data-percent^='34'] {
+    animation-delay: -34s;
+}
+[data-percent^='35'] {
+    animation-delay: -35s;
+}
+[data-percent^='36'] {
+    animation-delay: -36s;
+}
+[data-percent^='37'] {
+    animation-delay: -37s;
+}
+[data-percent^='38'] {
+    animation-delay: -38s;
+}
+[data-percent^='39'] {
+    animation-delay: -39s;
+}
+[data-percent^='40'] {
+    animation-delay: -40s;
+}
+[data-percent^='41'] {
+    animation-delay: -41s;
+}
+[data-percent^='42'] {
+    animation-delay: -42s;
+}
+[data-percent^='43'] {
+    animation-delay: -43s;
+}
+[data-percent^='44'] {
+    animation-delay: -44s;
+}
+[data-percent^='45'] {
+    animation-delay: -45s;
+}
+[data-percent^='46'] {
+    animation-delay: -46s;
+}
+[data-percent^='47'] {
+    animation-delay: -47s;
+}
+[data-percent^='48'] {
+    animation-delay: -48s;
+}
+[data-percent^='49'] {
+    animation-delay: -49s;
+}
+[data-percent^='50'] {
+    animation-delay: -50s;
+}
+[data-percent^='51'] {
+    animation-delay: -51s;
+}
+[data-percent^='52'] {
+    animation-delay: -52s;
+}
+[data-percent^='53'] {
+    animation-delay: -53s;
+}
+[data-percent^='54'] {
+    animation-delay: -54s;
+}
+[data-percent^='55'] {
+    animation-delay: -55s;
+}
+[data-percent^='56'] {
+    animation-delay: -56s;
+}
+[data-percent^='57'] {
+    animation-delay: -57s;
+}
+[data-percent^='58'] {
+    animation-delay: -58s;
+}
+[data-percent^='59'] {
+    animation-delay: -59s;
+}
+[data-percent^='60'] {
+    animation-delay: -60s;
+}
+[data-percent^='61'] {
+    animation-delay: -61s;
+}
+[data-percent^='62'] {
+    animation-delay: -62s;
+}
+[data-percent^='63'] {
+    animation-delay: -63s;
+}
+[data-percent^='64'] {
+    animation-delay: -64s;
+}
+[data-percent^='65'] {
+    animation-delay: -65s;
+}
+[data-percent^='66'] {
+    animation-delay: -66s;
+}
+[data-percent^='67'] {
+    animation-delay: -67s;
+}
+[data-percent^='68'] {
+    animation-delay: -68s;
+}
+[data-percent^='69'] {
+    animation-delay: -69s;
+}
+[data-percent^='70'] {
+    animation-delay: -70s;
+}
+[data-percent^='71'] {
+    animation-delay: -71s;
+}
+[data-percent^='72'] {
+    animation-delay: -72s;
+}
+[data-percent^='73'] {
+    animation-delay: -73s;
+}
+[data-percent^='74'] {
+    animation-delay: -74s;
+}
+[data-percent^='75'] {
+    animation-delay: -75s;
+}
+[data-percent^='76'] {
+    animation-delay: -76s;
+}
+[data-percent^='77'] {
+    animation-delay: -77s;
+}
+[data-percent^='78'] {
+    animation-delay: -78s;
+}
+[data-percent^='79'] {
+    animation-delay: -79s;
+}
+[data-percent^='80'] {
+    animation-delay: -80s;
+}
+[data-percent^='81'] {
+    animation-delay: -81s;
+}
+[data-percent^='82'] {
+    animation-delay: -82s;
+}
+[data-percent^='83'] {
+    animation-delay: -83s;
+}
+[data-percent^='84'] {
+    animation-delay: -84s;
+}
+[data-percent^='85'] {
+    animation-delay: -85s;
+}
+[data-percent^='86'] {
+    animation-delay: -86s;
+}
+[data-percent^='87'] {
+    animation-delay: -87s;
+}
+[data-percent^='88'] {
+    animation-delay: -88s;
+}
+[data-percent^='89'] {
+    animation-delay: -89s;
+}
+[data-percent^='90'] {
+    animation-delay: -90s;
+}
+[data-percent^='91'] {
+    animation-delay: -91s;
+}
+[data-percent^='92'] {
+    animation-delay: -92s;
+}
+[data-percent^='93'] {
+    animation-delay: -93s;
+}
+[data-percent^='94'] {
+    animation-delay: -94s;
+}
+[data-percent^='95'] {
+    animation-delay: -95s;
+}
+[data-percent^='96'] {
+    animation-delay: -96s;
+}
+[data-percent^='97'] {
+    animation-delay: -97s;
+}
+[data-percent^='98'] {
+    animation-delay: -98s;
+}
+[data-percent^='99'] {
+    animation-delay: -99s;
+}
+[data-percent^='100'] {
+    animation-delay: -99.9s;
+}
