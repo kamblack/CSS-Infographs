@@ -1,53 +1,56 @@
-.pie {
-	height: 150px;
-	width: 150px;
-	display: inline-block;
-    background: #ddd;
-    background-image: linear-gradient(to right, transparent 50%, #678668 0);
-	border-radius: 50%;
-    margin-right: 15px;
-    position: relative
+.bar {
+    display: inline-block;
+    width: 50px;
+    height: 250px;
+    background-color: transparent;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    margin-top: 30px;
+    position: relative;
+    animation-delay: -0s;
 }
 
-.pie::before {
-    content: '';
-    display: block;
-    height: 100%;
-    background-color: inherit;
-    border-radius: 0 100% 100% 0 / 50%;
-    margin-left: 50%;
-    transform-origin: left;
-    animation: pie-spin 50s linear infinite, pie-bg 100s step-end infinite;
-    animation-play-state: paused;
-    animation-delay: inherit;
-}
-
-.pie::after {
+.bar::before {
     content: attr(data-percent);
     font-family: Arial, sans-serif;
     font-weight: bold;
-    color: #222;
-    font-size: 2em;
-    text-shadow: 0 0 3px #fff;
+    color: #eee;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: auto;
+    align-items: flex-end;
     width: 100%;
+    height: 0%;
+    background-color: #597ed1;
+    animation:  barfill 100s linear infinite,
+                bartext 100s linear infinite;
+    animation-delay: inherit;
+    animation-play-state: paused;
     position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
+    bottom: 0;
 }
 
-@keyframes pie-spin {
+@keyframes barfill {
+    from {
+        height: 0%;
+    }
     to {
-        transform: rotate(.5turn);
+        height: 100%;
     }
 }
 
-@keyframes pie-bg {
-    50% {
-        background: #678668;
+@keyframes bartext {
+    0% {
+        color: #555;
+    }
+    8% {
+        color: #555;
+    }
+    9% {
+        color: #eee;
+    }
+    100% {
+        color: #eee;
     }
 }
 
